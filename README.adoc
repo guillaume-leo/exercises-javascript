@@ -1,5 +1,8 @@
 = Exercises
 
+https://guillaume-leo.github.io/exercises-javascript/. 
+
+
 // links
 :intro: https://docs.google.com/presentation/d/156vrNVBSOSy_YdHRKbaoqXfr3GALC2dtZFbaU-pR5eI/edit#slide=id.g35f391192_04
 :dom: https://docs.google.com/presentation/d/1zcucIJ-y8xyT5rjCE5hpPjBWq-RjIBusuXvIygfnqPQ/edit?usp=sharing
