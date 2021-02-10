@@ -88,5 +88,18 @@
         },
     ];
 
-    // your code here
+    document.getElementById('run').addEventListener('click',()=>{
+        
+        var allAges = []; // liste vide
+        
+        people.forEach(element => { // que je remplie de tout les ages
+            allAges.push(element.age);
+        });
+
+        var sumAges = allAges.reduce(function(a, b){  // magie 
+            return a + b;
+        }, 0);
+        
+        alert(sumAges);
+    })
 })();

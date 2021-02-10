@@ -27,5 +27,16 @@
         "cerise",
     ];
 
+    function removeDoubles(list){
+
+    }
+
+    document.getElementById('run').addEventListener('click',()=>{
+       
+        let unique = [...new Set(fruits)];
+        alert(unique);
+    })
+
+
     // your code here
 })();

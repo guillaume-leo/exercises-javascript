@@ -25,5 +25,16 @@
         "cerise",
     ];
 
-    // your code here
+    document.getElementById('run').addEventListener('click', ()=>{
+        var isPomme = '';
+        for(var i=0;i<fruits.length;i++){
+            if (fruits[i]=='pomme'){
+                isPomme='il y a une pomme dans la liste fruits';
+                break;
+            }else{
+                isPomme='il n\'y a pas de pomme dans la liste fruits';
+            }
+        }
+        console.log(isPomme);
+    })
 })();

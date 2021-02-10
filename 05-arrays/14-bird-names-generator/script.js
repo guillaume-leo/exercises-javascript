@@ -38,5 +38,35 @@
         "arboré",
     ]);
 
-    // your code here
+    document.getElementById('run').addEventListener('click',()=>{
+        
+        
+        // First create a random number between 0 and birds.length-1
+        rndNumber = Math.round(Math.random()*(birds.length-1));
+
+        // Create a second random number between 0 and [...adjectives].length-1
+
+        rndNumber2 = Math.round(Math.random()*([...adjectives].length-1)); 
+
+        // pick random bird name with "rndNumber" variable
+        rndBird = birds[rndNumber].name; 
+
+        // "isFemale" variable is true if female, else undefined
+        isFemale = birds[rndNumber].fem; 
+
+        // pick random adjective an adjective with "rndNumber2" variable
+        rndAdj = [...adjectives][rndNumber2];
+
+        //add "e" to the end of rndAdj if isFemale is true 
+        if (isFemale == true){ 
+            pronom = "La" ;
+            rndAdj+="e";
+        }else{
+            pronom = "Le";
+        }
+
+        // change html element
+        document.getElementById('target').innerHTML=pronom + " " + rndBird+" "+rndAdj;
+   
+    })
 })();
