@@ -17,7 +17,7 @@
         {id: "0004", os: "Windows"},
         {id: "0005"},
         {id: "0006", os: "macOS"},
-        {id: "0007"},
+        {id: "0007",user:null},
         {id: "0008"},
         {id: "0009", available: false, user: "Anthony"},
     ];
@@ -26,5 +26,27 @@
         os: "linux",
         user: null,
     };
+
+
+    document.getElementById('run').addEventListener('click',()=>{
+        
+     computers.forEach(element => {
+        if (element.available != false){
+            element.available = defaultProps.available;
+        }        
+     });
+     computers.forEach(element => {
+        if (typeof(element.os) != "string"){
+            element.os = defaultProps.os;
+        }        
+     });
+     computers.forEach(element => {
+        if (typeof(element.user) != "string"){
+            element.user = defaultProps.user;
+        }        
+     });
+     console.log(computers);
+
+    })
     // your code here
 })();

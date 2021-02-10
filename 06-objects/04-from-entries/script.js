@@ -12,5 +12,21 @@
 (() => {
     const keys = ["name", "species", "age", "gender", "color"];
     const values = ["Skitty", "cat", 9, "female", "tabby"];
-    // your code here
+
+    function merge(keysList, valuesList) {
+        var mergedList = [];
+        for (var i = 0; i < keysList.length; i++)
+             {mergedList.push([keysList[i],valuesList[i]]);}
+        return mergedList;
+    }
+    
+
+
+
+    document.getElementById('run').addEventListener('click', ()=>{
+
+        const animal = Object.fromEntries(merge(keys, values));
+        console.log(animal);
+    })
+    
 })();
