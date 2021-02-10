@@ -10,5 +10,36 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    
+
+    class Person {
+        constructor (firstname, lastname){
+            this.firstname=firstname;
+            this.lastname=lastname;
+
+
+
+    }
+
+    getter (){
+        return `${this.firstname} ${this.lastname}`;
+    }
+    setter (string){
+        this.firstname=string.split(' ')[0];
+        this.lastname=string.split(' ')[1];
+    }
+
+}
+
+
+
+
+    document.getElementById('run').addEventListener('click',()=>{
+        guigui = new Person("guigui","dupont");
+        console.log(guigui.getter());
+        guigui.setter("Jean Castex");
+        console.log(guigui.getter());
+    })
+
+
 })();
